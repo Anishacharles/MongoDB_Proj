@@ -1,0 +1,2122 @@
+Design database for Zen class programme
+
+Please enter a MongoDB connection string (Default: mongodb://localhost/): mongosh
+
+mongosh> use ZenclassDB
+switched to db ZenclassDB
+
+//Create users collection
+
+db.users.insertMany([
+    { userID:"S1001",
+    username: "Anisha",
+    email:"anisha@gmail.com",
+    password:"password123",
+    role:"Mentor",
+    gender:"Female",
+    Address:{
+        street:"123 main road",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-24")
+    },
+
+{  userID:"S1002",
+    username: "Fanisha",
+    email:"fanisha@gmail.com",
+    password:"password_123",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"34th main road",
+        city:"Bengaluru",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-24")
+    
+    
+    },
+
+    {  userID:"S1003",
+    username: "sanisha",
+    email:"sanisha@gmail.com",
+    password:"password_123",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"10th main road",
+        city:"Bengaluru",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-24")
+    
+    },
+
+{   userID:"S1004",
+    username: "Benish",
+    email:"benish@gmail.com",
+    password:"passwordadmin",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"56 Nehru main road",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-25")
+    
+    },
+
+    {   userID:"S1005",
+    username: "Mateo",
+    email:"mateo@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"Alur",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+
+{   userID:"S1006",
+    username: "Vino",
+    email:"vino@gmail.com",
+    password:"password_Hash_",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"123 main road",
+        city:"Electronic city",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-26")
+    },
+
+    { userID:"S1007",
+    username: "Olivia",
+    email:"olivia@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"pallikaranai",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+
+    {userID:"S1008",
+    username: "Zayden",
+    email:"zayden@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"Asaripallam",
+        city:"Nagercoil",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    
+    },
+
+
+{    userID:"S1009",
+     username: "Femi",
+     email:"femi@gmail.com",
+     password:"password_admin_123",
+     role:"Mentor",
+     gender:"Female",
+     Address:{
+        street:"11/14c periyathattuvilai",
+        city:"Nagercoil",
+        state:"Tamilnadu",
+        country:"India"
+    },
+     createdAT:new Date("2020-09-26")
+     },
+
+     {   
+    userID:"S1010",
+    username: "Vinisha",
+    email:"vinisha@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+     },
+
+     {   userID:"S1011",
+    username: "Kavitha",
+    email:"kavithaha@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27"),
+    
+    },
+
+     {   userID:"S1012",
+    username: "Jino",
+    email:"Jino@gmail.com",
+    password:"password_67_",
+    role:"Mentor",
+    gender:"Male",
+    Address:{
+        street:"3rd cross main road",
+        city:"Electronic city",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-26")
+   
+    },
+    {   userID:"S1013",
+    username: "Dinisha",
+    email:"dinisha@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"10th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    
+     },
+
+{   userID:"S1014",
+    username: "Vinisha",
+    email:"vinisha@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+   },
+
+    {   userID:"S1015",
+    username: "Vinish",
+    email:"vinish@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+
+    {   userID:"S1016",
+    username: "Jijo",
+    email:"Jijo@gmail.com",
+    password:"password_67_",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"VBC oracle",
+        city:"Electronic city",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+
+    {   userID:"S1017",
+    username: "Charles",
+    email:"charles@gmail.com",
+    password:"password_67_",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"periyathattuvilai",
+        city:"Nagercoil",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+
+    {   userID:"S1018",
+    username: "Mani",
+    email:"mani@gmail.com",
+    password:"password_67_",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"VBC oracle",
+        city:"Electronic city",
+        state:"Karnataka",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+   
+    },
+
+    {   userID:"S1019",
+    username: "Nandha kumar",
+    email:"nandha@gmail.com",
+    passwordHash:"password_1_2",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-27")
+    },
+    {   userID:"S1020",
+    username: "Sanjeev",
+    email:"sanjeev@gmail.com",
+    passwordHash:"password_12",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"12thth street, Pallikaranai",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-28")
+    },
+
+    {   userID:"S1021",
+    username: "Murugan",
+    email:"murugan@gmail.com",
+    passwordHash:"password1_2",
+    role:"Mentee",
+    gender:"Male",
+    Address:{
+        street:"6th street",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-29")
+        
+    },
+
+    {   userID:"S1022",
+    username: "Smiley",
+    email:"smileyn@gmail.com",
+    passwordHash:"password1_2",
+    role:"Mentee",
+    gender:"Female",
+    Address:{
+        street:"10th cross road",
+        city:"Chennai",
+        state:"Tamilnadu",
+        country:"India"
+    },
+    createdAT:new Date("2020-09-30")
+        
+    }
+    
+]);
+
+//Creating codekata collection
+
+db.codekata.insertMany([
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        challengeTitle:"FizzBuzz",
+        Level: "easy",
+        submissionDate:new Date("2020-10-28"),
+        score: 85,
+        languageUsed:"JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfa'),
+        challengeTitle: "Two Sum",
+        Level: "medium",
+        submissionDate: new Date("2020-10-27"),
+        score: 50,
+        languageUsed: "Python"
+    },
+
+     {
+        userID:ObjectId('66ffec6360922e82dcc73bfb'),
+        challengeTitle:"FizzBuzz",
+        Level: "easy",
+        submissionDate: new Date("2020-10-29"),
+        score: 85,
+        languageUsed: "JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfc'),
+        challengeTitle: "Reverse String",
+        Level: "easy",
+        submissionDate: new Date("2020-10-27"),
+        score: 100,
+        languageUsed: "HTML"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfd'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-28"),
+        score: 90,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfe'),
+        challengeTitle: "Two Sum",
+        Level: "easy",
+        submissionDate: new Date("2020-10-25"),
+        score: 85,
+        languageUsed: "JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bff'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-26"),
+        score: 90,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c01'),
+        challengeTitle: "Two Sum",
+        Level: "hard",
+        submissionDate: new Date("2020-10-29"),
+        score: 75,
+        languageUsed: "Java"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c02'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-28"),
+        score: 70,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c04'),
+        challengeTitle: "Binary Search",
+        Level: "medium",
+        submissionDate: new Date("2020-10-26"),
+        score: 100,
+        languageUsed: "HTML"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c05'),
+        challengeTitle:"FizzBuzz",
+        Level: "easy",
+        submissionDate:new Date("2020-10-28"),
+        score: 85,
+        languageUsed:"JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c06'),
+        challengeTitle: "Two Sum",
+        Level: "medium",
+        submissionDate: new Date("2020-10-27"),
+        score: 50,
+        languageUsed: "Python"
+    },
+
+     {
+        userID:ObjectId('66ffec6360922e82dcc73c07'),
+        challengeTitle:"FizzBuzz",
+        Level: "easy",
+        submissionDate: new Date("2020-10-29"),
+        score: 85,
+        languageUsed: "JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c08'),
+        challengeTitle: "Reverse String",
+        Level: "easy",
+        submissionDate: new Date("2020-10-27"),
+        score: 100,
+        languageUsed: "HTML"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c09'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-28"),
+        score: 90,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0a'),
+        challengeTitle: "Two Sum",
+        Level: "easy",
+        submissionDate: new Date("2020-10-25"),
+        score: 85,
+        languageUsed: "JavaScript"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0b'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-26"),
+        score: 85,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0c'),
+        challengeTitle: "Two Sum",
+        Level: "medium",
+        submissionDate: new Date("2020-10-29"),
+        score: 70,
+        languageUsed: "Java"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0d'),
+        challengeTitle: "Binary Search",
+        difficultyLevel: "hard",
+        submissionDate: new Date("2020-10-28"),
+        score: 70,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        challengeTitle: "Binary Search",
+        Level: "hard",
+        submissionDate: new Date("2020-10-26"),
+        score: 100,
+        languageUsed: "HTML"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c08'),
+        challengeTitle: "Two Sum",
+        Level: "medium",
+        submissionDate: new Date("2020-10-29"),
+        score: 79,
+        languageUsed: "Java"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfc'),
+        challengeTitle: "Binary Search",
+        Level: "easy",
+        submissionDate: new Date("2020-10-28"),
+        score: 80,
+        languageUsed: "C++"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c06'),
+        challengeTitle: "Binary Search",
+        Level: "medium",
+        submissionDate: new Date("2020-10-26"),
+        score: 70,
+        languageUsed: "HTML"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        challengeTitle: "Two Sum",
+        Level: "medium",
+        submissionDate: new Date("2020-10-29"),
+        score: 70,
+        languageUsed: "Java"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfe'),
+        challengeTitle: "Binary Search",
+        Level: "medium",
+        submissionDate: new Date("2020-10-26"),
+        score: 91,
+        languageUsed:"HTML"
+    }
+    
+]);
+
+
+//Creating attendance collection
+
+db.attendance.insertMany([
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfa'),
+        classDate:new Date('2020-10-16'),
+        status:"absent"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfb'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfc'),
+        classDate:new Date('2020-10-16'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfd'),
+        classDate: new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfe'),
+        classDate: new Date('2020-10-16'),
+        status:"absent"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bff'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c01'),
+        classDate:new Date('2020-10-16'),
+        status:"absent"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c02'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c04'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c05'),
+        classDate: new Date('2020-10-16'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c06'),
+        classDate: new Date('2020-10-16'),
+        status:"absent"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c07'),
+        classDate:new Date('2020-10-16'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c08'),
+        classDate: new Date('2020-10-16'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c09'),
+        classDate: new Date('2020-10-16'),
+        status:"absent"
+    },
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c09'),
+        classDate: new Date('2020-10-16'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0a'),
+        classDate: new Date('2020-10-16'),
+        status:"absent"
+    },
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0b'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0c'),
+        classDate:new Date('2020-10-16'),
+        status:"absent"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0d'),
+        classDate:new Date('2020-10-16'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        classDate:new Date('2020-10-18'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfa'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfb'),
+        classDate: new Date('2020-10-18'),
+        status:"absent"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfc'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfd'),
+        classDate:new Date('2020-10-18'),
+        status:"absent"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfe'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bff'),
+        classDate:new Date('2020-10-18'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c01'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c02'),
+        classDate: new Date('2020-10-18'),
+        status:"absent"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c04'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c05'),
+        classDate: new Date('2020-10-18'),
+        status:"absent"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c06'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+    },
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c07'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c08'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c09'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0a'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0b'),
+        classDate:new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0c'),
+        classDate:new Date('2020-10-18'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0d'),
+        classDate: new Date('2020-10-18'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bf9'),
+        classDate: new Date('2020-10-25'),
+        status:"absent"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfa'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfb'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+       
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfc'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfd'),
+        classDate:new Date('2020-10-25'),
+        status:"absent"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bfe'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73bff'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c01'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c02'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c04'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c05'),
+        classDate: new Date('2020-10-25'),
+        status:"absent"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c06'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c07'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c08'),
+        classDate: new Date('2020-10-25'),
+        status:"absent"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c09'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0a'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+        
+    },
+    
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0b'),
+        classDate: new Date('2020-10-25'),
+        status:"present"
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0c'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+        
+    },
+
+    {
+        userID:ObjectId('66ffec6360922e82dcc73c0d'),
+        classDate:new Date('2020-10-25'),
+        status:"present"
+        
+    }
+
+]);   
+
+
+//Creating topics collection
+
+db.topics.insertMany([
+    {
+       title:"JavaScript Basics",
+       description:"Introduction to java script.",
+       createdAT: new Date("2020-10-16"),
+       taskTitle:"Basic Javascript concepts."
+    },
+
+    {
+       title:"HTMLBasics",
+       description:"Introduction to HTML.",
+       createdAT: new Date("2020-10-18"),
+       taskTitle:"Basic Flexbox Layout."
+    },
+
+    {
+       title:"HTML and CSS",
+       description:"Introduction to java.",
+       createdAT: new Date("2020-10-21"),
+       taskTitle:"Responsive Layout."
+       
+    },
+
+     {
+       title:"Tailwind css",
+       description:"Introduction to Tailwind css.",
+       createdAT: new Date("2020-10-25"),
+       taskTitle:"Basic Flexbox Layout using Tailwind css."
+    },
+
+     {
+       title:"React",
+       description:"Introduction to React.",
+       createdAT: new Date("2020-10-25"),
+       taskTitle:"Router Tasks."
+    },
+
+    {
+       title:"MangoDB",
+       description:"Introduction to MangoDB.",
+       createdAT: new Date("2020-10-30"),
+       taskTitle:"Mongodb vs MySQL."
+    }
+]);
+       
+
+//Creating Tasks collection
+
+db.tasks.insertMany([
+    {
+        
+        topicID:ObjectId('66fffd8360922e82dcc73c61'),
+        title:"JavaScript Basics",
+        description:"Introduction to java script.",
+        createdAT: new Date("2020-10-15"),
+        taskTitle:"Basic Javascript concepts.",
+        SubmissionDate: new Date("2020-10-16")
+
+    },
+
+    {
+        topicID:ObjectId('66fffd8360922e82dcc73c62'),
+        title:"HTMLBasics",
+        description:"Introduction to HTML.",
+        createdAT: new Date("2020-10-18"),
+        taskTitle:"Basic Flexbox Layout.",
+        SubmissionDate: new Date("2020-10-22")
+
+    },
+
+    {
+        topicID:ObjectId('66fffd8360922e82dcc73c63'),
+        title:"HTML and CSS",
+        description:"Introduction to java.",
+        createdAT: new Date("2020-10-21"),
+        taskTitle:"Responsive Layout.",
+        SubmissionDate: new Date("2020-10-25")
+
+
+    },
+
+    {
+        topicID:ObjectId('66fffd8360922e82dcc73c64'),
+        title:"Tailwind css",
+        description:"Introduction to Tailwind css.",
+        createdAT: new Date("2020-10-25"),
+        taskTitle:"Basic Flexbox Layout using Tailwind css.",
+        SubmissionDate: new Date("2020-10-25")
+
+    },
+
+    {
+        topicID:ObjectId('66fffd8360922e82dcc73c65'),
+        title:"React",
+        description:"Introduction to React.",
+        createdAT: new Date("2020-10-25"),
+        taskTitle:"Router Tasks.",
+        SubmissionDate: new Date("2020-10-26")
+
+    },
+
+    {
+        topicID:ObjectId('66fffd8360922e82dcc73c66'),
+        title:"MongoDB",
+        description:"Introduction to MangoDB.",
+        createdAT: new Date("2020-10-30"),
+        taskTitle:"Mongodb vs MySQL.",
+        SubmissionDate: new Date("2020-10-31")
+
+    }
+]);
+
+
+//Creating company Drives collection
+
+db.company_drives.insertMany([
+    {
+        companyName:"TechCorp",
+        driveDate: new Date("2020-10-17"),
+        location:"Chennai",
+        position:"Software Engineer"
+    },
+
+    {
+        companyName:"Microsoft",
+        driveDate: new Date("2020-10-18"),
+        location:"Noida",
+        position:"Backend Developer"
+    },
+
+    {
+        companyName:"Amazon",
+        driveDate: new Date("2020-10-20"),
+        location:"Delhi",
+        position:"Backend Developer"
+    },
+
+     {
+        companyName:"HCL",
+        driveDate: new Date("2020-10-21"),
+        location:"Bengaluru",
+        position:"Full Stack Developer"
+    },
+
+    {
+        companyName:"TCS",
+        driveDate: new Date("2020-10-23"),
+        location:"Noida",
+        position:"MERN stack developer"
+    },
+
+    {
+        companyName:"CTS",
+        driveDate: new Date("2020-10-26"),
+        location:"Chennai",
+        position:"Cloud Engineer"
+    }
+]);
+
+db.mentors.insertMany([
+    {
+        mentorName:"Anisha",
+        userID:ObjectId('66ffec6360922e82dcc73bf8'),
+        skills: ["MYSQL", "React","MongoDB"],
+        yearsOfExperience: 10
+    },
+    {
+        mentorName:"Femi",
+        userID:ObjectId('66ffec6360922e82dcc73c00'),
+        skills: ["HTML", "JavaScript"],
+        yearsOfExperience: 6
+    },
+    {
+        mentorName:"Jino",
+        userID:ObjectId('66ffec6360922e82dcc73c03'),
+        skills: ["Java", "C++"],
+        yearsOfExperience: 3
+    }
+]);
+
+//Creating placement collection
+
+db.placements.insertMany([
+  
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73c0d'),
+        companyName:"TechCorp",
+        driveID:ObjectId('6700039460922e82dcc73c6d'), 
+        driveDate: new Date("2020-10-17")
+    },
+
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73c0a'), 
+        companyName:"Microsoft",
+        driveID:ObjectId('6700039460922e82dcc73c6e'), 
+        driveDate: new Date("2020-10-18")
+    },
+
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73c08'), 
+        companyName:"Amazon",
+        driveID:ObjectId('6700039460922e82dcc73c6f'),
+        driveDate: new Date("2020-10-20")
+    },
+
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73c01'), 
+        companyName:"HCL",
+        driveID:ObjectId('6700039460922e82dcc73c70'),
+        driveDate: new Date("2020-10-21")
+    },
+
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73bff'), 
+        companyName:"TCS",
+        driveID:ObjectId('6700039460922e82dcc73c71'),
+        driveDate: new Date("2020-10-23")
+    },
+
+    {
+        studentID:ObjectId('66ffec6360922e82dcc73bf9'), 
+        companyName:"CTS",
+        driveID:ObjectId('6700039460922e82dcc73c72'),
+        driveDate: new Date("2020-10-26")
+    } 
+
+]);
+
+//updated users by mentorID
+ 
+ db.users.updateOne(
+     { username: "Smiley", role: "Mentee" },
+     { $set: { mentorID:ObjectId('66ffec6360922e82dcc73c00') } }
+ );
+  
+  [{
+    _id: ObjectId('66ffec6360922e82dcc73bf8'),
+    userID: 'S1001',
+    username: 'Anisha',
+    email: 'anisha@gmail.com',
+    password: 'password123',
+    role: 'Mentor',
+    gender: 'Female',
+    Address: {
+      street: '123 main road',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-24T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bf9'),
+    userID: 'S1002',
+    username: 'Fanisha',
+    email: 'fanisha@gmail.com',
+    password: 'password_123',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '34th main road',
+      city: 'Bengaluru',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-24T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bfa'),
+    userID: 'S1003',
+    username: 'sanisha',
+    email: 'sanisha@gmail.com',
+    password: 'password_123',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '10th main road',
+      city: 'Bengaluru',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-24T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bfb'),
+    userID: 'S1004',
+    username: 'Benish',
+    email: 'benish@gmail.com',
+    password: 'passwordadmin',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '56 Nehru main road',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-25T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bfc'),
+    userID: 'S1005',
+    username: 'Mateo',
+    email: 'mateo@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: 'Alur',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bfd'),
+    userID: 'S1006',
+    username: 'Vino',
+    email: 'vino@gmail.com',
+    password: 'password_Hash_',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '123 main road',
+      city: 'Electronic city',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-26T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bfe'),
+    userID: 'S1007',
+    username: 'Olivia',
+    email: 'olivia@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: 'pallikaranai',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73bff'),
+    userID: 'S1008',
+    username: 'Zayden',
+    email: 'zayden@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: 'Asaripallam',
+      city: 'Nagercoil',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c00'),
+    userID: 'S1009',
+    username: 'Femi',
+    email: 'femi@gmail.com',
+    password: 'password_admin_123',
+    role: 'Mentor',
+    gender: 'Female',
+    Address: {
+      street: '11/14c periyathattuvilai',
+      city: 'Nagercoil',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c01'),
+    userID: 'S1010',
+    username: 'Vinisha',
+    email: 'vinisha@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c02'),
+    userID: 'S1011',
+    username: 'Kavitha',
+    email: 'kavithaha@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c03'),
+    userID: 'S1012',
+    username: 'Jino',
+    email: 'Jino@gmail.com',
+    password: 'password_67_',
+    role: 'Mentor',
+    gender: 'Male',
+    Address: {
+      street: '3rd cross main road',
+      city: 'Electronic city',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-26T00:00:00.000Z')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c04'),
+    userID: 'S1013',
+    username: 'Dinisha',
+    email: 'dinisha@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '10th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c05'),
+    userID: 'S1014',
+    username: 'Vinisha',
+    email: 'vinisha@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c06'),
+    userID: 'S1015',
+    username: 'Vinish',
+    email: 'vinish@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c07'),
+    userID: 'S1016',
+    username: 'Jijo',
+    email: 'Jijo@gmail.com',
+    password: 'password_67_',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: 'VBC oracle',
+      city: 'Electronic city',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c08'),
+    userID: 'S1017',
+    username: 'Charles',
+    email: 'charles@gmail.com',
+    password: 'password_67_',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: 'periyathattuvilai',
+      city: 'Nagercoil',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c09'),
+    userID: 'S1018',
+    username: 'Mani',
+    email: 'mani@gmail.com',
+    password: 'password_67_',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: 'VBC oracle',
+      city: 'Electronic city',
+      state: 'Karnataka',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73c00')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c0a'),
+    userID: 'S1019',
+    username: 'Nandha kumar',
+    email: 'nandha@gmail.com',
+    passwordHash: 'password_1_2',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c0b'),
+    userID: 'S1020',
+    username: 'Sanjeev',
+    email: 'sanjeev@gmail.com',
+    passwordHash: 'password_12',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '12thth street, Pallikaranai',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-28T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+  }
+
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c0c'),
+    userID: 'S1021',
+    username: 'Murugan',
+    email: 'murugan@gmail.com',
+    passwordHash: 'password1_2',
+    role: 'Mentee',
+    gender: 'Male',
+    Address: {
+      street: '6th street',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-29T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73c03')
+  },
+  {
+    _id: ObjectId('66ffec6360922e82dcc73c0d'),
+    userID: 'S1022',
+    username: 'Smiley',
+    email: 'smileyn@gmail.com',
+    passwordHash: 'password1_2',
+    role: 'Mentee',
+    gender: 'Female',
+    Address: {
+      street: '10th cross road',
+      city: 'Chennai',
+      state: 'Tamilnadu',
+      country: 'India'
+    },
+    createdAT: ISODate('2020-09-30T00:00:00.000Z'),
+    mentorID: ObjectId('66ffec6360922e82dcc73c00')
+  }
+]
+
+1.Find all the topics and tasks which are thought in the month of October
+
+db.topics.find({
+    createdAT: {
+      $gte: new Date("2020-10-01"),
+       $lt: new Date("2020-10-30")
+    }
+  });
+
+  OUTPUT:
+
+  [
+  {
+    _id: ObjectId('66fffd8360922e82dcc73c61'),
+    title: 'JavaScript Basics',
+    description: 'Introduction to java script.',
+    createdAT: ISODate('2020-10-16T00:00:00.000Z'),
+    taskTitle: 'Basic Javascript concepts.'
+  },
+  {
+    _id: ObjectId('66fffd8360922e82dcc73c62'),
+    title: 'HTMLBasics',
+    description: 'Introduction to HTML.',
+    createdAT: ISODate('2020-10-18T00:00:00.000Z'),
+    taskTitle: 'Basic Flexbox Layout.'
+  },
+  {
+    _id: ObjectId('66fffd8360922e82dcc73c63'),
+    title: 'HTML and CSS',
+    description: 'Introduction to java.',
+    createdAT: ISODate('2020-10-21T00:00:00.000Z'),
+    taskTitle: 'Responsive Layout.'
+  },
+  {
+    _id: ObjectId('66fffd8360922e82dcc73c64'),
+    title: 'Tailwind css',
+    description: 'Introduction to Tailwind css.',
+    createdAT: ISODate('2020-10-25T00:00:00.000Z'),
+    taskTitle: 'Basic Flexbox Layout using Tailwind css.'
+  },
+  {
+    _id: ObjectId('66fffd8360922e82dcc73c65'),
+    title: 'React',
+    description: 'Introduction to React.',
+    createdAT: ISODate('2020-10-25T00:00:00.000Z'),
+    taskTitle: 'Router Tasks.'
+  }
+]
+
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+ db.company_drives.find({
+    driveDate: {
+        $gte: new Date("2020-10-15"),
+         $lte: new Date("2020-10-31")
+     }
+ });
+
+ OUTPUT:
+
+ [
+  {
+    _id: ObjectId('6700039460922e82dcc73c6d'),
+    companyName: 'TechCorp',
+    driveDate: ISODate('2020-10-17T00:00:00.000Z'),
+    location: 'Chennai',
+    position: 'Software Engineer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c6e'),
+    companyName: 'Microsoft',
+    driveDate: ISODate('2020-10-18T00:00:00.000Z'),
+    location: 'Noida',
+    position: 'Backend Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c6f'),
+    companyName: 'Amazon',
+    driveDate: ISODate('2020-10-20T00:00:00.000Z'),
+    location: 'Delhi',
+    position: 'Backend Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c70'),
+    companyName: 'HCL',
+    driveDate: ISODate('2020-10-21T00:00:00.000Z'),
+    location: 'Bengaluru',
+    position: 'Full Stack Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c71'),
+    companyName: 'TCS',
+    driveDate: ISODate('2020-10-23T00:00:00.000Z'),
+    location: 'Noida',
+    position: 'MERN stack developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c72'),
+    companyName: 'CTS',
+    driveDate: ISODate('2020-10-26T00:00:00.000Z'),
+    location: 'Chennai',
+    position: 'Cloud Engineer'
+  }
+]
+
+
+3.Find all the company drives and students who are appeared for the placement.
+
+const placements = db.placements.find({}).toArray();// Retrieve all placements from the placements collection
+  
+  const driveIDs = placements.map(p => p.driveID);// Extract the drive IDs from the placements
+
+  // Find the company drives based on the extracted drive IDs
+  const companyDrives = db.company_drives.find({
+      _id: { $in: driveIDs }
+  }).toArray();
+  console.log(companyDrives);
+
+  OUTPUT:
+
+  [
+  {
+    _id: ObjectId('6700039460922e82dcc73c6d'),
+    companyName: 'TechCorp',
+    driveDate: ISODate('2020-10-17T00:00:00.000Z'),
+    location: 'Chennai',
+    position: 'Software Engineer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c6e'),
+    companyName: 'Microsoft',
+    driveDate: ISODate('2020-10-18T00:00:00.000Z'),
+    location: 'Noida',
+    position: 'Backend Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c6f'),
+    companyName: 'Amazon',
+    driveDate: ISODate('2020-10-20T00:00:00.000Z'),
+    location: 'Delhi',
+    position: 'Backend Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c70'),
+    companyName: 'HCL',
+    driveDate: ISODate('2020-10-21T00:00:00.000Z'),
+    location: 'Bengaluru',
+    position: 'Full Stack Developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c71'),
+    companyName: 'TCS',
+    driveDate: ISODate('2020-10-23T00:00:00.000Z'),
+    location: 'Noida',
+    position: 'MERN stack developer'
+  },
+  {
+    _id: ObjectId('6700039460922e82dcc73c72'),
+    companyName: 'CTS',
+    driveDate: ISODate('2020-10-26T00:00:00.000Z'),
+    location: 'Chennai',
+    position: 'Cloud Engineer'
+  }
+]
+
+4.Find the number of problems solved by the user in codekata
+
+ const userID =ObjectId('66ffec6360922e82dcc73bf9');
+  const problemsSolvedCount = db.codekata.countDocuments({
+    userID: userID
+   });
+  print(`Number of problems solved by user: ${problemsSolvedCount}`);
+
+  OUTPUT:
+    Number of problems solved by user: 3
+
+
+5.Find all the mentors with who has the mentee's count more than 15
+
+const mentorsWithMoreThan15Mentees = db.mentors.aggregate([
+    {
+      $lookup: {
+       from: "users",             
+       localField: "userID",      
+       foreignField: "mentorID",  
+       as: "Mentees"             
+     }
+   },
+   {
+     $match: {
+       $expr: {
+         $gt: [{ $size: "$Mentees" }, 15]  // Filter mentors with more than 15 mentees
+       }
+      }
+    }
+  ]).toArray();
+ console.log(mentorsWithMoreThan15Mentees);
+
+
+OUTPUT:
+
+ZenclassDB>  console.log(mentorsWithMoreThan15Mentees);
+[
+  {
+    _id: ObjectId('6700047560922e82dcc73c73'),
+    mentorName: 'Anisha',
+    userID: ObjectId('66ffec6360922e82dcc73bf8'),
+    skills: [ 'MYSQL', 'React', 'MongoDB' ],
+    yearsOfExperience: 10,
+    Mentees: [
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bf9'),
+        userID: 'S1002',
+        username: 'Fanisha',
+        email: 'fanisha@gmail.com',
+        password: 'password_123',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '34th main road',
+          city: 'Bengaluru',
+          state: 'Karnataka',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-24T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bfa'),
+        userID: 'S1003',
+        username: 'sanisha',
+        email: 'sanisha@gmail.com',
+        password: 'password_123',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '10th main road',
+          city: 'Bengaluru',
+          state: 'Karnataka',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-24T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bfb'),
+        userID: 'S1004',
+        username: 'Benish',
+        email: 'benish@gmail.com',
+        password: 'passwordadmin',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: '56 Nehru main road',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-25T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bfc'),
+        userID: 'S1005',
+        username: 'Mateo',
+        email: 'mateo@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: 'Alur',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bfd'),
+        userID: 'S1006',
+        username: 'Vino',
+        email: 'vino@gmail.com',
+        password: 'password_Hash_',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: '123 main road',
+          city: 'Electronic city',
+          state: 'Karnataka',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-26T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bfe'),
+        userID: 'S1007',
+        username: 'Olivia',
+        email: 'olivia@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: 'pallikaranai',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73bff'),
+        userID: 'S1008',
+        username: 'Zayden',
+        email: 'zayden@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: 'Asaripallam',
+          city: 'Nagercoil',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c01'),
+        userID: 'S1010',
+        username: 'Vinisha',
+        email: 'vinisha@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '6th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c02'),
+        userID: 'S1011',
+        username: 'Kavitha',
+        email: 'kavithaha@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '6th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c04'),
+        userID: 'S1013',
+        username: 'Dinisha',
+        email: 'dinisha@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '10th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c05'),
+        userID: 'S1014',
+        username: 'Vinisha',
+        email: 'vinisha@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Female',
+        Address: {
+          street: '6th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c06'),
+        userID: 'S1015',
+        username: 'Vinish',
+        email: 'vinish@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: '6th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c07'),
+        userID: 'S1016',
+        username: 'Jijo',
+        email: 'Jijo@gmail.com',
+        password: 'password_67_',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: 'VBC oracle',
+          city: 'Electronic city',
+          state: 'Karnataka',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c08'),
+        userID: 'S1017',
+        username: 'Charles',
+        email: 'charles@gmail.com',
+        password: 'password_67_',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: 'periyathattuvilai',
+          city: 'Nagercoil',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c0a'),
+        userID: 'S1019',
+        username: 'Nandha kumar',
+        email: 'nandha@gmail.com',
+        passwordHash: 'password_1_2',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: '6th street',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-27T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      },
+      {
+        _id: ObjectId('66ffec6360922e82dcc73c0b'),
+        userID: 'S1020',
+        username: 'Sanjeev',
+        email: 'sanjeev@gmail.com',
+        passwordHash: 'password_12',
+        role: 'Mentee',
+        gender: 'Male',
+        Address: {
+          street: '12thth street, Pallikaranai',
+          city: 'Chennai',
+          state: 'Tamilnadu',
+          country: 'India'
+        },
+        createdAT: ISODate('2020-09-28T00:00:00.000Z'),
+        mentorID: ObjectId('66ffec6360922e82dcc73bf8')
+      }
+    ]
+  }
+]
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+
+const absentUsers = db.attendance.find({
+    status: "absent",
+    classDate: {
+        $gte: new Date("2020-10-15"),
+        $lte: new Date("2020-10-31")
+    }
+}).toArray();
+
+// Step 2: Extract user IDs of absent users
+const userIDs = absentUsers.map(u => u.userID);
+
+// Step 3: Find users with no tasks
+const usersWithNoTask = db.users.aggregate([
+    {
+        $match: {
+            _id: { $in: userIDs }  // Match users that are absent
+        }
+    },
+    {
+        $lookup: {
+            from: "tasks",
+            localField: "_id",
+            foreignField: "userID",
+            as: "tasks"  // Join with tasks collection
+        }
+    },
+    {
+        $match: {
+            $expr: {
+                $eq: [ { $size: "$tasks" }, 0 ]  // Check if the tasks array is empty
+            }
+        }
+    },
+    {
+        $count: "count"  // Count the number of users with no tasks
+    }
+]).toArray();
+
+
+console.log(usersWithNoTask);
+
+OUTPUT:
+
+[ { count: 16 } ]
